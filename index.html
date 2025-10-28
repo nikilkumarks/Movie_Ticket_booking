@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Booking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎟 Online Booking System</h1>
+
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" />
+
+    <p>Select your seat(s) below:</p>
+    <div class="seats" id="seats"></div>
+
+    <div class="info">
+      <p><span class="available"></span> Available | 
+         <span class="booked"></span> Booked | 
+         <span class="selected"></span> Selected</p>
+    </div>
+
+    <div class="summary">
+      <h3>Booking Summary</h3>
+      <p id="selectedSeats">Selected Seats: None</p>
+      <p id="total">Total: ₹0</p>
+      <p id="count">Available: 0 | Booked: 0</p>
+    </div>
+
+    <div class="buttons">
+      <button id="confirmBtn">Confirm Booking</button>
+      <button id="cancelBtn">Cancel Selected</button>
+      <button id="resetBtn">Reset All</button>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
